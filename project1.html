@@ -5,6 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #canvas1 {
+        border: 2px solid black;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <canvas id="canvas1" width="400" height="400"></canvas>
+    <script>
+      var kanvasPratikum = document.querySelector('#canvas1');
+      var ctx;
+      function gambarTitik(temp, x, y, r, g, b, a) {
+        var index;
+        index = 4 * (x + y * kanvasPratikum.width);
+        imageDataPratikum.data[index] = r;
+        imageDataPratikum.data[index + 1] = g;
+        imageDataPratikum.data[index + 2] = b;
+        imageDataPratikum.data[index + 3] = a;
+      }
+      ctx = kanvasPratikum.getContext('2d');
+      //   ctx.fillStyle = 'cyan'; //memberikan warna
+      //   ctx.fillRect(10, 10, 200, 200);
+      var imageDataPratikum = ctx.getImageData(
+        0,
+        0,
+        kanvasPratikum.width,
+        kanvasPratikum.height
+      );
+      console.log(kanvasPratikum);
+
+      for (let i = 0; i < 100; i++) {
+        for (let b = 1; b <= 100; b++) {
+          gambarTitik(imageDataPratikum, 20 + i, 20 + b, 0, 0, 255, 255);
+        }
+      }
+
+      ctx.putImageData(imageDataPratikum, 0, 0);
+    </script>
+    <!-- Properti data mengembalikan objek yang berisi data gambar dari objek imageData yang ditentukan. -->
+    <!-- RGBA -->
+  </body>
 </html>
