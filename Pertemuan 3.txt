@@ -1,0 +1,25 @@
+Minggu ke Tiga
+3.Output Primitif
+ Struktur dasar geometeri yang paling sederhana dari gambar grafika komputer
+ Titik dan garis adalah contoh dari output primitif yang dapat digunakan untuk membentuk , gambar
+ Misalkan lingkaran,kerucut , permukaan bentuk persegi, kurva , dan permukaan bentuk lengkung dll
+
+ 3.1 Piksel
+     Pixel adalah elemen gambar kecil berupa sebuah titik yang ditempatkan dilayar
+ 3.2 Warna
+     Warna merupakan atribut dari piksel
+     selian piksel yang lebih penting diperhitungkan lagi adalah warna dari piksel itu sendiri 
+     Untuk menampilkan suatu gambar pada layar monitor sering kali tidak cukup hanya dengan 256 tampil warna
+ 3.3 Algoritma Pembentuk Garis
+     adlah untuk menentukan lokasi pixel yang paling dekat dengan garis sebenanrn nya 
+     DDA algoritma
+     Bresenham
+ 3.4 Kuadran Garis
+    
+ 3.5 DDA
+   langkah " pembentukan garis berdasarkan algoritma DDA :
+   1.Tentukan 2 tititk yang akan dihubungkan dalam pembentuk garis
+   2.Tentukan salah satunya sebagai titik awal (x1,y1) dan yang lain sebagai titik ah 
+
+3.6 Bresenham
+    Algoritma brensenham merupaka suatu algoritma pendekan dikreasikan oleh 
